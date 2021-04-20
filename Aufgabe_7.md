@@ -4,9 +4,12 @@ Sie suchen für Ihr Projekt einen Widerstand. Sie haben den Baukasten der E12 Re
 Leider ist kein Widerstand dabei, der nah genug an ihrem Wunschwert liegt. Sie möchten dem durch 2 parallel geschaltete Widerstände aus der E12 Reihe möglichst nahe kommen.  Entwickeln Sie ein Programm, das alle Kombinationen automatisch erstellt und das beste Widerstandspaar für Sie ermittelt und ausgibt.
 Ihr Programm soll die folgenden Punkte erfüllen:  
   
-  - [ ] Berechnen Sie die E12 Reihe bis 10.000 Ohm und geben Sie diese aus
-  - [ ] Erstellen Sie eine Funktion zur Berechnung von Parallelwiderständen
-    - [ ] Testen Sie Ihre Unterfunktion mit zwei Werten  
+  - [ ] Erstellen Sie eine Funktion, welche Ihnen den "m-ten" Wert der E12 Reihe zurück gibt. (Der nullte Wert sollte Ergebnis 1 zurück geben) 
+  - [ ] Berechnen Sie die E12 Reihe bis 10.000 Ohm und geben Sie diese aus (For-Schleife) 
+  - [ ] Erstellen Sie eine Funktion zur Berechnung von Parallelwiderständen. Die Funktion erhält zwei Widerstände und gibt das Ergebnis zurück. 
+  - [ ] Fordern Sie den Nutzer zur Eingabe von zwei Widerständen auf. Lesen Sie diese von der Tastatur ein. Nutzen Sie ihre Funktion um den Parallelwiderstand zu berechnen und geben Sie diesen auf den Bildschirm aus. 
+  - [ ] Fordern Sie den Nutzer zur Eingabe von 2 Nummern aus der E12-Reihe aus. Lesen Sie diese von der Tastatur ein. Berechnen Sie den Parallelwiderstand mit Hilfe BEIDER Funktionen. (Nummer 0 steht dann für 1 Ohm, Nummer 9 steht z.B. für 5.62 Ohm)
+  - [ ] Fordern die den Nutzer zur Eingabe eines Wunschwiderstands auf und lesen Sie diesen von der Tastatur ein. 
   - [ ] Berechnen Sie jede mögliche Kombination von zwei parallel geschalteten Widerständen der E12-Reihe
   - [ ] Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand
   - [ ] Geben Sie die gefundene Kombination von Widerständen aus
@@ -22,6 +25,7 @@ Ihr Programm soll die folgenden Punkte erfüllen:
  Wiki:
  https://de.wikipedia.org/wiki/E-Reihe
  
+ Achtung: Die Werte gemäß der Formel sind nicht ganz exakt die Widerstände eines E12-Baukastens (hostorische Gründe). Sie verwenden für die Berechnung die errechneten Werte
 
   
 ## Tip - E12 Reihe
