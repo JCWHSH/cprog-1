@@ -12,9 +12,9 @@ Ihr erstes Programm soll folgendes können:
 
 ## Vorbereitung
 
-Binden Sie zu Beginn die benötigten Bibliotheken in ihr Programm ein. (#include ...)
+Binden Sie zu Beginn die benötigten Bibliotheken in Ihr Programm ein. (Mit dem #include Befehl) Überlegen Sie welche Sie brauchen.
 
-Danach könne sie die main() Funktion anlegen und mit den Aufgaben beginnen.
+Danach können Sie die main() Funktion anlegen und in dieser Ihr Programm schreiben. 
 
 
 ### Namen, Studiengang und E-Mail
@@ -45,9 +45,17 @@ Damit die Ausgabe nicht in der selben Zeile steht benutze den Zeilenverschub mit
 ### Summe
 
 Legen sie nun zwei Integer Variablen an und initialisieren Sie diese mit beliebigen Werten. 
-Geben sie danach die Summe der beiden Zahlen zwei Zeilen unter der vorherigen Ausgabe aus.
-Um einen Überlauf zu erzeugen müssen Sie an den "Rand" des Wertebereiches. Diesen können Sie leicht erreichen, wenn Sie die Bibliothek limits.h einbinden. 
-Sie können dann Ihrer Variablen dann den Wert INT_MAX zuweisen. Kleiner sind die Zahlen bei einem Überlauf in einer Short-Variable. Das Maximum heißt dort SHRT_MAX
+Geben sie danach die Summe der beiden Zahlen zwei Zeilen unter der vorherigen Ausgabe aus. Erzeugen Sie einen Überlauf durch entsprechende Werte. 
+
+#### Tipp Überlauf
+<details>
+<summary>Click to expand</summary>
+
+Um einen Überlauf zu erzeugen müssen Sie an den "Rand" des Wertebereiches. Diese können Sie z.B. den Vorlesungsfolien entnehmen oder einfach durch probieren rausfinden. Sie können auch überlegen welche Werte Sie wohl mit 32 Bit (Integer auf Ihrem System) oder 16 Bit (Short auf Ihrem System) erreichen können. 
+Sie können die Maxima auch leicht erreichen, wenn Sie die Bibliothek limits.h einbinden. Sie können dann Ihrer Variablen dann den Wert INT_MAX zuweisen. Kleiner sind die Zahlen in einer Short-Variable. Das Maximum heißt dort SHRT_MAX.
+
+</details>
+
 
 
 ### Kapital
