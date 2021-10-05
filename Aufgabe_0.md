@@ -3,18 +3,16 @@
 
 Herzlich Wilkommen zu Ihrer ersten Programmieraufgabe in C
 
-Ihr erstes Programm soll die folgenden Daten auf dem Bildschirm ausgeben.
-- [ ] Ihren Namen, Studiengang und E-Mail
-- [ ] Summe von 2 Zhlen ausgeben
-- [ ] Kapital berechnen, 180€ zu 2%
-- [ ] Die 24 durch Bit-Operatoren vierteln
-
-Diese Ausgaben sollen alle in einer main() Funktion stehen und nacheinander auf dem Bildschirm erscheinen.
+Ihr erstes Programm soll folgendes können: 
+- [ ] Ihren Namen, Studiengang und E-Mail auf der Konsole ausgeben. 
+- [ ] Die Summe von 2 Zahlen berechnen und ausgeben. Provozieren Sie dabei auch einen Überlauf. 
+- [ ] den Kapitalertrag für ein Jahr von 180 € bei 2% Verzinsung korrekt ausgeben.Erzeugen Sie danach durch Wahl entsprechender Datentypen einen Rechenfehler.
+- [ ] die Zahl 24 durch Anwendung von Bit-Operatoren vierteln.
 
 
 ## Vorbereitung
 
-Schreiben Sie zu Beginn die benötigte standard Bibliothek noch über die "main()".
+Binden Sie zu Beginn die benötigten Bibliotheken in ihr Programm ein. (#include ...)
 
 Danach könne sie die main() Funktion anlegen und mit den Aufgaben beginnen.
 
@@ -24,76 +22,51 @@ Danach könne sie die main() Funktion anlegen und mit den Aufgaben beginnen.
 Schreiben Sie einen Code in Ihre main()-Funktion, die  Ihren Vor- und Nachnamen auf dem Bildschirm ausgibt.
 Geben Sie bei der Ausgabe auch an welcher der Vor- und der Nachname ist.
 
-Eine zeile tiefer soll nun Ihr Studiengang zusätzlich auf dem Bildschirm ausgegeben werden.
+Eine Zeile tiefer soll nun Ihr Studiengang zusätzlich auf dem Bildschirm ausgegeben werden.
 
-Im letzten Schritt soll nun Ihre E-Mail ebenfalls in einer neuen Zeile auf dem Bildschirm ausgegeben werden.
+Im letzten Schritt soll nun Ihre E-Mail ebenfalls in einer neuen Zeile auf dem Bildschirm ausgegeben werden. Fügen Sie das @ als Ansi-Code ein. 
 
-- [x] Ihren Namen, Studiengang und E-Mail
-- [ ] Summe von 2 Zhlen ausgeben
-- [ ] Kapital berechnen, 180€ zu 2%
-- [ ] Die 24 durch Bit-Operatoren vierteln
-
-#### Tip
+#### Tipp
 <details>
 <summary>Click to expand</summary>
 
-Benutze die printf() methode um Alles was gefragt wird auf dem Bildschirm aus zu geben.
+Benutzen Sie den printf() für die Bildschirmausgaben. Nutzen Sie dabei auch Steuerzeichen (Siehe Vorlesungsfolien). Sonderzeichen können auch über Hexadezimal- oder Oktalzahlen eingebunden werden. 
 
 </details>
 
-#### Tip 2
+#### Tipp 2
 <details>
 <summary>Click to expand</summary>
 
 Damit die Ausgabe nicht in der selben Zeile steht benutze den Zeilenverschub mit "\n".
-Du kannst diese Zeichen vor der neuen Ausgabe einbauen oder nach der Alten.
 
 </details>
 
 ### Summe
 
-Legen sie nun zwei integer Werte an und definieren sie diese.
-Geben sie danach die Summe der beidne Zahlen zwei Zeilen unter der vorherigen Aufgabe aus.
+Legen sie nun zwei Integer Variablen an und initialisieren Sie diese mit beliebigen Werten. 
+Geben sie danach die Summe der beiden Zahlen zwei Zeilen unter der vorherigen Ausgabe aus.
+Um einen Überlauf zu erzeugen müssen Sie an den "Rand" des Wertebereiches. Diesen können Sie leicht erreichen, wenn Sie die Bibliothek limits.h einbinden. 
+Sie können dann Ihrer Variablen dann den Wert INT_MAX zuweisen. Kleiner sind die Zahlen bei einem Überlauf in einer Short-Variable. Das Maximum heißt dort SHRT_MAX
 
-- [x] Ihren Namen, Studiengang und E-Mail
-- [x] Summe von 2 Zhlen ausgeben
-- [ ] Kapital berechnen, 180€ zu 2%
-- [ ] Die 24 durch Bit-Operatoren vierteln
 
 ### Kapital
 
 Sie haben ein Kapital von 180€, das jährlich mit 2% verzinst wird.
-Berechnen sie den Gewinn Nach einem Jahr und geben sie diesne auf dem Bildschirm aus.
-
-- [x] Ihren Namen, Studiengang und E-Mail
-- [x] Summe von 2 Zhlen ausgeben
-- [x] Kapital berechnen, 180€ zu 2%
-- [ ] Die 24 durch Bit-Operatoren vierteln
-
-#### Zusatz
-<details>
-<summary>Click to expand</summary>
-
-Erzeugen sie durch die Wahl entsprechender Datentypen einen Rechenfehler. 
-
-</details>
+Berechnen sie den Gewinn nach einem Jahr und geben Sie dieses auf dem Bildschirm aus. Erzeugen sie durch die Wahl entsprechender Datentypen einen Rechenfehler. Das passiert z.B. bei Berechnungen wie 2/100 da dann eine Integerdivision durchgeführt wird. Probieren Sie verschiedene Varianten aus. 
 
 ### Bit-Operatoren
 
-Legen sie nun einen Integer mit dem Werte 24 an.
-Dieser Integer soll durch Bit-Operatoren geviertelt werden.
-Geben Sie beide Zahlen auf dem Bildschirm aus.
+Legen sie nun einen Integervariable mit dem Wert 24 an.
+Diese Zahl soll durch Bit-Operatoren geviertelt werden.
+Geben Sie das Ergebnis auf dem Bildschirm aus.
 
-- [x] Ihren Namen, Studiengang und E-Mail
-- [x] Summe von 2 Zhlen ausgeben
-- [x] Kapital berechnen, 180€ zu 2%
-- [x] Die 24 durch Bit-Operatoren vierteln
 
-#### Tip
+#### Tipp
 <details>
 <summary>Click to expand</summary>
 
-Überlegen sie sich, wie die 24 und das Ergebniss 24/4 in Binär aussieht.   
+Überlegen sie sich, wie die 24 und das Ergebniss 24/4 als Binärzahl aussehen.   
 
 </details>
 
@@ -106,8 +79,8 @@ Herzlichen Gl\x9Ackwunsch die hast gerade dein erstes Programm in C geschrieben 
 <details>
 <summary>Click to expand</summary>
 
-Hier was für die fortgeschrittenen!
+Hier was für die Fortgeschrittenen!
 
-Alle Angaben sollen nun nicht im pirntf() Befehl stehen, sonder von der Tastatur eingelesn werden.
+Alle Angaben sollen nun nicht im printf() Befehl stehen, sonder von der Tastatur eingelesen werden.
 </details>
 © 2021 GitHub, Inc.
